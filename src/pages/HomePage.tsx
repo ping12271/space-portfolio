@@ -325,16 +325,6 @@ const ContactSection = () => (
 
 export function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
 
   const handleScrollToSection = (id: string) => {
     const element = document.getElementById(id);
